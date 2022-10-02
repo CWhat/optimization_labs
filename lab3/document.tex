@@ -1,0 +1,71 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[russian]{babel}
+\usepackage[oglav,spisok,boldsect,eqwhole,figwhole,hyperref,hyperprint,remarks,greekit]{./style/fn2kursstyle}
+\graphicspath{{./style/}{./figures/}{./imgs/}}
+
+\usepackage{multirow}
+\usepackage{supertabular}
+\usepackage{multicol}
+
+\usepackage{comment}
+\usepackage{makecell}
+\renewcommand{\arraystretch}{0.9}
+\renewcommand\cellset{\renewcommand\arraystretch{0.7}%
+\setlength\extrarowheight{2pt}}
+
+\usepackage{float}
+\usepackage{filecontents}
+
+% Параметры титульного листа
+\author{З.\,И.~Абрамов}
+\supervisor{А.\,В.~Чередниченко}
+\group{ФН2-52Б}
+\date{2022}
+
+% TODO менять в зависимости от лабораторной
+\title{3. Сопряженные направления}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section-{Введение}
+Найти с заданной точностью точку минимума и минимальное значение целевой функции. Исследовать на минимум квадратичную функцию $10x^2-4xy+7y^2 - - 4\sqrt{5}(5x-y)-16$. Далее исследовать функцию Розенброка $f(x,y)=\alpha (x^2-y)^2+(x\brop{-}1)^2$ с параметрами $\alpha$ 1 и 10. При исследовании для каждой функции брать два параметра точности поиска $\varepsilon=0,01$ и $\varepsilon = 0,000001$. Варианты заданий даны в таблице ниже. Также для каждой функции и каждого параметра точности поиска взять две различные (существенно различные) начальные точки. Начальные точки выбрать самостоятельно.
+
+В результате исследований должно быть выявлено влияние на стоимость методов (количество вычисленных значений целевой функции):
+\begin{itemize}
+	\item параметров точности поиска;
+	\item начальной точки;
+	\item выпуклости (переход от квадратичной функции к функции Розенброка);
+	\item овражности функции (параметра $\alpha$ в функции Розенброка).
+\end{itemize}
+
+Реализовать поиск минимума с помощью методов
+% TODO менять в зависимотсти от лабораторной
+сопряженных градиентов, Флетчера --- Ривса и Полака --- Рибера.
+
+\newpage
+
+\vspace*{-1cm}
+
+\section{Результаты работы}
+
+\input{./test.tex}
+
+\vspace*{1cm}
+
+\section-{Вывод}
+% TODO менять в зависимости от лабораторной
+
+\begin{thebibliography}{10}
+\bibitem{Attetkov} Аттетков А.В., Галкин С.В., Зарубин С.В. Методы оптимизации. М.: Изд-во МГТУ им Н.Э. Баумана, 2003. 440 с.
+\end{thebibliography}
+
+\end{document} 

@@ -1,0 +1,9 @@
+/usr/bin/clang++ -fcolor-diagnostics -fansi-escape-codes -g /workspaces/optimization_labs/main.cpp -o /workspaces/optimization_labs/main
+
+
+/usr/bin/clang++ -fcolor-diagnostics -fansi-escape-codes -g /workspaces/optimization_labs/main.cpp -o /workspaces/optimization_labs/main && ./main && python3 draw.py
+
+
+
+# f4 = rozenbrok(30.0)
+# f4Grad = rozenbrokGrad(30.0)
