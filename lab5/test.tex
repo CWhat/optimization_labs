@@ -1,0 +1,448 @@
+\subsection{Квадратичная функция}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для квадратичной функции}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & &\makecell{Метод ДФП} &\makecell{Метод БФШ} &\makecell{Метод\\Пауэлла} \\
+        \hline
+	\multirow{10}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.00, 2.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.24, -0.00) &(2.24, -0.00) &(2.24, -0.00) \\ 
+	\cline{2-5}
+	&Минимум &-66.00 &-66.00 &-66.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &2 &2 &2 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &77 &77 &78 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &3 &3 &3 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.00, -30.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.24, -0.00) &(2.24, -0.00) &(2.24, -0.00) \\ 
+	\cline{2-5}
+	&Минимум &-66.00 &-66.00 &-66.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &2 &2 &2 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &77 &77 &77 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &3 &3 &3 \\ 
+	\cline{2-5}
+	\hline
+	\multirow{10}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.000000, 2.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.236068, -0.000000) &(2.236068, 0.000000) &(2.236068, 0.000000) \\ 
+	\cline{2-5}
+	&Минимум &-66.000000 &-66.000000 &-66.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &3 &3 &2 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &170 &171 &116 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &4 &4 &3 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.000000, -30.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.236068, -0.000000) &(2.236068, 0.000000) &(2.236068, -0.000000) \\ 
+	\cline{2-5}
+	&Минимум &-66.000000 &-66.000000 &-66.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &3 &3 &3 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &170 &171 &170 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &4 &4 &4 \\ 
+	\cline{2-5}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 0.01, start = (-6.00, 2.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 0.01, start = (-6.00, 2.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 0.01, start = (-6.00, 2.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 0.01, start = (20.00, -30.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 0.01, start = (20.00, -30.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 0.01, start = (20.00, -30.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 1e-06, start = (-6.000000, 2.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 1e-06, start = (-6.000000, 2.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 1e-06, start = (-6.000000, 2.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 1e-06, start = (20.000000, -30.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 1e-06, start = (20.000000, -30.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 1e-06, start = (20.000000, -30.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            \subsection{Функция Розенброка с $\alpha$ = 1}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для функции Розенброка с $\alpha$ = 1}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & &\makecell{Метод ДФП} &\makecell{Метод БФШ} &\makecell{Метод\\Пауэлла} \\
+        \hline
+	\multirow{10}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.00, 2.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(1.00, 0.99) &(0.99, 0.98) &(1.01, 1.01) \\ 
+	\cline{2-5}
+	&Минимум &0.00 &0.00 &0.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &15 &9 &12 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &541 &332 &436 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &16 &10 &13 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.00, -30.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(1.00, 0.99) &(0.99, 0.98) &(1.00, 0.99) \\ 
+	\cline{2-5}
+	&Минимум &0.00 &0.00 &0.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &15 &9 &16 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &541 &332 &576 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &16 &10 &17 \\ 
+	\cline{2-5}
+	\hline
+	\multirow{10}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.000000, 2.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.999999, 0.999998) &(0.999999, 0.999998) &(1.000001, 1.000001) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &35 &25 &35 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &1916 &1376 &1915 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &36 &26 &36 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.000000, -30.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.999999, 0.999998) &(0.999999, 0.999998) &(0.999999, 0.999998) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &35 &25 &36 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &1916 &1376 &1970 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &36 &26 &37 \\ 
+	\cline{2-5}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            \subsection{Функция Розенброка с $\alpha$ = 10}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для функции Розенброка с $\alpha$ = 10}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & &\makecell{Метод ДФП} &\makecell{Метод БФШ} &\makecell{Метод\\Пауэлла} \\
+        \hline
+	\multirow{10}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.00, 2.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.99, 0.98) &(0.99, 0.98) &(1.01, 1.01) \\ 
+	\cline{2-5}
+	&Минимум &0.00 &0.00 &0.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &15 &14 &15 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &565 &530 &568 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &16 &15 &16 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.00, -30.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.99, 0.98) &(0.99, 0.98) &(0.99, 0.99) \\ 
+	\cline{2-5}
+	&Минимум &0.00 &0.00 &0.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &15 &14 &12 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &565 &530 &450 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &16 &15 &13 \\ 
+	\cline{2-5}
+	\hline
+	\multirow{10}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.000000, 2.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.999999, 0.999999) &(0.999999, 0.999998) &(1.000000, 1.000001) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &39 &21 &39 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &2183 &1190 &2186 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &40 &22 &40 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.000000, -30.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.999999, 0.999999) &(0.999999, 0.999998) &(0.999999, 0.999999) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &39 &21 &37 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &2183 &1190 &2070 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вычислений\\градиента} &40 &22 &38 \\ 
+	\cline{2-5}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Давидона-Флетчера-Пауэлла, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом ДФП}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Бройдена-Флетчера-Шенно, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом БФШ}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Пауэлла, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Пауэлла}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
