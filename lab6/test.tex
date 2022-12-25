@@ -1,0 +1,424 @@
+\subsubsection{Квадратичная функция}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для квадратичной функции}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & &\makecell{Метод ЦПС} &\makecell{Метод\\Хука-Дживса} &\makecell{Метод\\Розенброка} \\
+        \hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.00, 2.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.24, 0.00) &(2.23, 0.00) &(2.24, -0.00) \\ 
+	\cline{2-5}
+	&Минимум &-66.00 &-66.00 &-66.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &4 &14 &4 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &292 &63 &253 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.00, -30.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.24, -0.00) &(2.23, 0.00) &(2.24, -0.00) \\ 
+	\cline{2-5}
+	&Минимум &-66.00 &-66.00 &-66.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &5 &25 &7 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &339 &118 &407 \\ 
+	\cline{2-5}
+	\hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.000000, 2.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.236068, 0.000000) &(2.236068, 0.000000) &(2.236068, -0.000000) \\ 
+	\cline{2-5}
+	&Минимум &-66.000000 &-66.000000 &-66.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &7 &32 &8 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &902 &140 &826 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.000000, -30.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(2.236068, -0.000000) &(2.236068, 0.000000) &(2.236068, 0.000000) \\ 
+	\cline{2-5}
+	&Минимум &-66.000000 &-66.000000 &-66.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &8 &43 &13 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &989 &195 &1282 \\ 
+	\cline{2-5}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 0.01, start = (-6.00, 2.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 0.01, start = (-6.00, 2.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 0.01, start = (-6.00, 2.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 0.01, start = (20.00, -30.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 0.01, start = (20.00, -30.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 0.01, start = (20.00, -30.00), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 1e-06, start = (-6.000000, 2.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 1e-06, start = (-6.000000, 2.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 1e-06, start = (-6.000000, 2.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 1e-06, start = (20.000000, -30.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 1e-06, start = (20.000000, -30.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 1e-06, start = (20.000000, -30.000000), Квадратичная функция}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            \subsubsection{Функция Розенброка с $\alpha$ = 1}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для функции Розенброка с $\alpha$ = 1}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & &\makecell{Метод ЦПС} &\makecell{Метод\\Хука-Дживса} &\makecell{Метод\\Розенброка} \\
+        \hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.00, 2.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(1.02, 1.03) &(0.98, 0.96) &(1.00, 1.00) \\ 
+	\cline{2-5}
+	&Минимум &0.00 &0.00 &0.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &18 &28 &5 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &1344 &133 &330 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.00, -30.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.98, 0.97) &(1.00, 1.00) &(1.00, 1.00) \\ 
+	\cline{2-5}
+	&Минимум &0.00 &0.00 &0.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &14 &27 &12 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &1018 &128 &706 \\ 
+	\cline{2-5}
+	\hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.000000, 2.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(1.000002, 1.000003) &(0.999998, 0.999995) &(1.000000, 1.000000) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &59 &67 &6 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &7741 &315 &660 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.000000, -30.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.999998, 0.999997) &(1.000000, 1.000000) &(1.000000, 1.000000) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &55 &40 &13 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &7273 &180 &1300 \\ 
+	\cline{2-5}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 1}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            \subsubsection{Функция Розенброка с $\alpha$ = 10}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для функции Розенброка с $\alpha$ = 10}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & &\makecell{Метод ЦПС} &\makecell{Метод\\Хука-Дживса} &\makecell{Метод\\Розенброка} \\
+        \hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.00, 2.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.85, 0.73) &(0.83, 0.68) &(0.97, 0.95) \\ 
+	\cline{2-5}
+	&Минимум &0.02 &0.03 &0.00 \\ 
+	\cline{2-5}
+	&Кол-во итераций &27 &114 &19 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &1870 &563 &1177 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.00, -30.00)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.85, 0.73) &(0.83, 0.68) &(0.84, 0.70) \\ 
+	\cline{2-5}
+	&Минимум &0.02 &0.03 &0.03 \\ 
+	\cline{2-5}
+	&Кол-во итераций &31 &39 &8 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &2364 &188 &476 \\ 
+	\cline{2-5}
+	\hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(-6.000000, 2.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.999982, 0.999965) &(0.999964, 0.999927) &(1.000000, 1.000000) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &381 &370 &23 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &52205 &1830 &2408 \\ 
+	\cline{2-5}
+\cline{2-5}&\textbf{Начальная точка} &\multicolumn{3}{c|}{\textbf{(20.000000, -30.000000)}}\\
+	\cline{2-5}
+	&Точка минимума &(0.999982, 0.999965) &(0.999964, 0.999927) &(1.000000, 1.000000) \\ 
+	\cline{2-5}
+	&Минимум &0.000000 &0.000000 &0.000000 \\ 
+	\cline{2-5}
+	&Кол-во итераций &385 &295 &18 \\ 
+	\cline{2-5}
+	&\makecell{Кол-во вызовов\\целевой функции} &52869 &1455 &1806 \\ 
+	\cline{2-5}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 0.01, start = (-6.00, 2.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-6.0, 2.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 0.01, start = (20.00, -30.00), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (20.0, -30.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 1e-06, start = (-6.000000, 2.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-6.0, 2.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод циклического покоординатного спуска, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом ЦПС}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Хука-Дживса, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Хука---Дживса}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.80\textwidth]{Метод Розенброка, eps 1e-06, start = (20.000000, -30.000000), Функция Розенброка с alpha = 10}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (20.0, -30.0) методом Розенброка}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            

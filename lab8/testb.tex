@@ -1,0 +1,340 @@
+\subsubsection{Квадратичная функция}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для квадратичной функции}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        & &\makecell{Метод внутренних\\штрафных функций} &\makecell{Метод внешних\\штрафных функций} \\
+        \hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(0.00, 0.00)}}\\
+	\cline{2-4}
+	&Точка минимума &(2.24, -0.00) &(2.24, 0.00) \\ 
+	\cline{2-4}
+	&Минимум &-66.00 &-66.00 \\ 
+	\cline{2-4}
+	&Кол-во итераций &11 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &722 &159 \\ 
+	\cline{2-4}
+\cline{2-4}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(-7.00, -9.00)}}\\
+	\cline{2-4}
+	&Точка минимума &(2.24, -0.00) &(2.24, -0.00) \\ 
+	\cline{2-4}
+	&Минимум &-66.00 &-66.00 \\ 
+	\cline{2-4}
+	&Кол-во итераций &13 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &971 &199 \\ 
+	\cline{2-4}
+	\hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(0.000000, 0.000000)}}\\
+	\cline{2-4}
+	&Точка минимума &(2.236068, -0.000000) &(2.236068, -0.000000) \\ 
+	\cline{2-4}
+	&Минимум &-66.000000 &-66.000000 \\ 
+	\cline{2-4}
+	&Кол-во итераций &18 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &2224 &296 \\ 
+	\cline{2-4}
+\cline{2-4}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(-7.000000, -9.000000)}}\\
+	\cline{2-4}
+	&Точка минимума &(2.236068, -0.000000) &(2.236068, 0.000000) \\ 
+	\cline{2-4}
+	&Минимум &-66.000000 &-66.000000 \\ 
+	\cline{2-4}
+	&Кол-во итераций &18 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &2449 &361 \\ 
+	\cline{2-4}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 0.01, start = (0.00, 0.00), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (0.0, 0.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 0.01, start = (0.00, 0.00), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (0.0, 0.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 0.01, start = (-7.00, -9.00), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-7.0, -9.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 0.01, start = (-7.00, -9.00), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 0.01$, начальной точке (-7.0, -9.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 1e-06, start = (0.000000, 0.000000), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (0.0, 0.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 1e-06, start = (0.000000, 0.000000), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (0.0, 0.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 1e-06, start = (-7.000000, -9.000000), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-7.0, -9.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 1e-06, start = (-7.000000, -9.000000), Квадратичная функция, testb}%
+	        \caption{Поиск минимума квадратичной функции при $\varepsilon = 1e-06$, начальной точке (-7.0, -9.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            \subsubsection{Функция Розенброка с $\alpha$ = 1}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для функции Розенброка с $\alpha$ = 1}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        & &\makecell{Метод внутренних\\штрафных функций} &\makecell{Метод внешних\\штрафных функций} \\
+        \hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(0.00, 0.00)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.00, 1.00) &(1.00, 1.00) \\ 
+	\cline{2-4}
+	&Минимум &0.00 &0.00 \\ 
+	\cline{2-4}
+	&Кол-во итераций &7 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &814 &204 \\ 
+	\cline{2-4}
+\cline{2-4}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(-7.00, -9.00)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.00, 1.00) &(1.00, 1.00) \\ 
+	\cline{2-4}
+	&Минимум &0.00 &0.00 \\ 
+	\cline{2-4}
+	&Кол-во итераций &7 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &844 &194 \\ 
+	\cline{2-4}
+	\hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(0.000000, 0.000000)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.000000, 1.000000) &(1.000000, 1.000000) \\ 
+	\cline{2-4}
+	&Минимум &0.000000 &0.000000 \\ 
+	\cline{2-4}
+	&Кол-во итераций &14 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &3287 &451 \\ 
+	\cline{2-4}
+\cline{2-4}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(-7.000000, -9.000000)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.000000, 1.000000) &(1.000000, 1.000000) \\ 
+	\cline{2-4}
+	&Минимум &0.000000 &0.000000 \\ 
+	\cline{2-4}
+	&Кол-во итераций &14 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &3287 &406 \\ 
+	\cline{2-4}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 0.01, start = (0.00, 0.00), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (0.0, 0.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 0.01, start = (0.00, 0.00), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (0.0, 0.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 0.01, start = (-7.00, -9.00), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-7.0, -9.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 0.01, start = (-7.00, -9.00), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 0.01$, начальной точке (-7.0, -9.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 1e-06, start = (0.000000, 0.000000), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (0.0, 0.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 1e-06, start = (0.000000, 0.000000), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (0.0, 0.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 1e-06, start = (-7.000000, -9.000000), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-7.0, -9.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 1e-06, start = (-7.000000, -9.000000), Функция Розенброка с alpha = 1, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 1 при $\varepsilon = 1e-06$, начальной точке (-7.0, -9.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            \subsubsection{Функция Розенброка с $\alpha$ = 10}
+
+\begin{table}[H]
+        \centering
+        \vspace*{-1.5em}
+        \caption{Результаты работы алгоритмов\\для функции Розенброка с $\alpha$ = 10}
+        \footnotesize
+        \begin{tabular}{|c|c|c|c|}
+        \hline
+        & &\makecell{Метод внутренних\\штрафных функций} &\makecell{Метод внешних\\штрафных функций} \\
+        \hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 0.01$}}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(0.00, 0.00)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.00, 0.99) &(1.00, 1.00) \\ 
+	\cline{2-4}
+	&Минимум &0.00 &0.00 \\ 
+	\cline{2-4}
+	&Кол-во итераций &7 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &2154 &729 \\ 
+	\cline{2-4}
+\cline{2-4}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(-7.00, -9.00)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.00, 0.99) &(1.00, 1.00) \\ 
+	\cline{2-4}
+	&Минимум &0.00 &0.00 \\ 
+	\cline{2-4}
+	&Кол-во итераций &7 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &2224 &844 \\ 
+	\cline{2-4}
+	\hline
+	\multirow{8}{*}{\rotatebox[origin=c]{90}{$\varepsilon = 1e-06$}}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(0.000000, 0.000000)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.000000, 1.000000) &(1.000000, 1.000000) \\ 
+	\cline{2-4}
+	&Минимум &0.000000 &0.000000 \\ 
+	\cline{2-4}
+	&Кол-во итераций &14 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &13042 &2251 \\ 
+	\cline{2-4}
+\cline{2-4}&\textbf{Начальная точка} &\multicolumn{2}{c|}{\textbf{(-7.000000, -9.000000)}}\\
+	\cline{2-4}
+	&Точка минимума &(1.000000, 0.999999) &(1.000000, 0.999999) \\ 
+	\cline{2-4}
+	&Минимум &0.000000 &0.000000 \\ 
+	\cline{2-4}
+	&Кол-во итераций &14 &2 \\ 
+	\cline{2-4}
+	&\makecell{Кол-во вызовов\\целевой функции} &12852 &2241 \\ 
+	\cline{2-4}
+	\hline
+
+\end{tabular}
+\end{table}
+
+
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 0.01, start = (0.00, 0.00), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (0.0, 0.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 0.01, start = (0.00, 0.00), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (0.0, 0.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 0.01, start = (-7.00, -9.00), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-7.0, -9.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 0.01, start = (-7.00, -9.00), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 0.01$, начальной точке (-7.0, -9.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 1e-06, start = (0.000000, 0.000000), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (0.0, 0.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 1e-06, start = (0.000000, 0.000000), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (0.0, 0.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внутренних штрафных функций, eps 1e-06, start = (-7.000000, -9.000000), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-7.0, -9.0) методом внутренних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
+            \begin{figure}[H]
+	        \centering
+	        \includegraphics[width=0.85\textwidth]{Метод внешних штрафных функций, eps 1e-06, start = (-7.000000, -9.000000), Функция Розенброка с alpha = 10, testb}%
+	        \caption{Поиск минимума функции Розенброка с $\alpha$ = 10 при $\varepsilon = 1e-06$, начальной точке (-7.0, -9.0) методом внешних штрафных функций}
+	        \vspace*{-1.2cm}
+            \end{figure}
+            
